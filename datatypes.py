@@ -1,0 +1,10 @@
+i = int(input().strip())
+d = float(input().strip()
+s = input()
+j=int(input().strip())
+e=float(input().strip())
+t=input()
+print(i+j)
+print(d+e)
+print(s+t)
+

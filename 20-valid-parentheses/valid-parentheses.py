@@ -6,6 +6,7 @@ class Solution:
             if ch in freq.values():
                 st.append(ch)
             elif ch in freq.keys():
-                if not st or freq[ch]!=st.pop():
+                if not st or st[-1]!=freq[ch]:
                     return False
-        return not st        
+                st.pop()
+        return len(st)==0    
